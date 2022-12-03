@@ -21,12 +21,19 @@ class Student{
     }
     void display()
     {
-        cout<<this->name<<" "<<this->name<<" ";
+        cout<<this->name<<" "<<this->rollNo<<" "<<endl;
     }
 };
 
 int main()
 {
-    Student s1;
+    Student s1;//default constructor
     s1.display();
+
+    Student s2("Kane",2222); //parameterized constructor
+    s2.display();
+
+    Student s3=s1;   // copy constructor
+    // Student s3(s1); 
+    s3.display();
 }
